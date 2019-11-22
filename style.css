@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.love {
+  background-color: #e7273f;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 25px;
+  width: 350px;
+}
+.love:focus {
+  outline: none;
+}
+.love .icon-container {
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: 1px solid #eee;
+  color: #e7273f;
+  padding: 20px 25px;
+  position: relative;
+}
+.love .text {
+  padding: 0 25px;
+  flex: 1;
+  text-align: center;
+}
+.love .gray-text {
+  display: block;
+  color: #aaa;
+  font-size: 12px;
+}
+.fa-redo {
+  margin-left: 10px;
+}
+.heart {
+  position: absolute;
+  color: #e7273f;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fly 3s linear forwards;
+}
+@keyframes fly {
+  to {
+    transform: translate(-50%, -50px);
+  }
+}
